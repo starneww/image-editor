@@ -5,7 +5,7 @@ import cv2
 import os
 from googletrans import Translator
 from config import Config
-from bs4 import BeautifulSoup
+
 
 def crop_center(pil_img, crop_width, crop_height):
     img_width, img_height = pil_img.size
