@@ -15,7 +15,7 @@ class Config(object):
     RemoveBG_API = os.environ.get("RemoveBG_API", "")
 
     # Enable or disable private bot
-    PRIVATE = True
+    PRIVATE = FALSE
 
     # Add id without @
     # if PRIVATE is True only users that are in this list are allowed to use the bot
