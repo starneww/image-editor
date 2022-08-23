@@ -8,10 +8,6 @@ from config import Config
 
 @Client.on_message(filters.command(["start"]) & filters.private)
 async def start(client: Client, message: Message):
-    try:
-        if Config.PRIVATE is True and message.chat.username not in Config.USERNAMES:
-            await message.reply_text(Translator().translate(f"Hi {message.chat.first_name} you are not allowed to use this bot!", dest=Config.LANG).text, quote=True)
-        else:
             await message.reply_text(
                 text=script.START_MSG.format(message.from_user.mention),
                 disable_web_page_preview=True,
